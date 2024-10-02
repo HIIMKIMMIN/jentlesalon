@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* font-family: "Gothic A1", sans-serif; */
+/* font-family: "Wittgenstein", serif; */
+
+
+.inner{
+    display: block;
+    width: 60%;
+    margin: -80px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.wrap{
+    background: linear-gradient(45deg, rgba(181, 105,163,0.3), rgba(132,151,261,0.3)) no-repeat center/cover;
+}
+header{
+    height: 100vh;
+    background: url(../img/main_img.png)no-repeat center/cover;
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    line-height: 70px;
+}
+header .top .logo{
+    width: 10%;
+}
+header .top .logo a{
+    font-family: "Wittgenstein", serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 3em;
+}
+header .top nav{width: 50%;}
+header  .top nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+header .top nav ul li a{
+    color:#fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+header .top nav ul li a::before{
+    content: '';
+    position: absolute;
+    left:0; bottom: -0.6em;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 0.2em;
+    transition: all 0.3s;
+    transform: scaleX(0);
+}
+header .top nav ul li a:hover::before{
+    transform: scaleX(1);
+}
+header .top .icon_area{
+    margin-right: 5em;
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+header .top .search{
+    background: url(../img/search_icon.png)no-repeat center/cover;
+    width: 2em;
+    height: 2em;
+}
+header .top .login{
+    background: url(../img/person_icon.png)no-repeat center/cover;
+    width: 2em;
+    height: 2em;
+}
+/* header */
+
+.content_area{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.content_area::before{
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    background-color: #aebac7;
+    width: 100%;
+    height: 3px;
+}
+.content_area .title_area{
+    font-family: "Wittgenstein", serif;
+    position: absolute;
+    transform: rotate(-90deg);
+    text-align: center;
+    font-size: 2.5rem;
+    left: -0.5em; top: 6em;
+}
+.content_area .img_area figure{
+    background: url(../img/con_img3.jpg) no-repeat center/cover;
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    left: 13em; top: 5em;
+    overflow: hidden;
+}
+.content_area .img_area2 figure{
+    background: url(../img/con_img4.jpg) no-repeat center/cover;
+    width: 30em;
+    height: 10em;
+    position: absolute;
+    left: 33em; top: 7em;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #aebac7;
+    transform: rotate(-10deg);
+}
+.content_area .text_area{
+    position: absolute;
+    left: 45em; top: 25em;
+    width: 20em;
+    height: 15em;
+}
+.content_area .text_area p{
+    margin-top: 1em;
+}
+/* content_area */
+
+
+
+.content_area2{
+    width: 100%;
+    height: 127em;
+    position: relative;
+    background: linear-gradient(135deg, #fff 50%, rgba(132,151,261,0.1)50%);
+}
+.content_area2::before{
+    content: '';
+    position: absolute;
+    left: 0; top: 20%;
+    background-color: #aebac7;
+    width: 100%;
+    height: 3px;
+}
+.content_area2 .img_area1{
+    position: absolute;
+    left: 0em; top: 5em;
+    overflow: hidden;
+}
+.content_area2 .img_area1 figure{
+    background: url(../img/popup_img1.png) no-repeat left/cover;
+    width: 30em;
+    height: 40em;
+}
+.content_area2 .img_area1 .text_area{
+    text-align: center;
+    width: 25em;
+    padding: 1.5em;
+    width: 480px;
+    box-sizing: border-box;
+}
+.content_area2 .img_area1 .text_area strong{
+    font-size: 1.5rem;
+}
+.content_area2 .img_area1 .text_area p{
+    margin-top: 1em;
+    line-height: 1.6;
+}
+
+
+
+.content_area2 .img_area2{
+    position: absolute;
+    left: 57%; top: 5em;
+    overflow: hidden;
+}
+.content_area2 .img_area2 .text_area{
+    text-align: center;
+}
+.content_area2 .img_area2 strong{
+    font-size: 3em;
+    font-family: "Wittgenstein", serif;
+}
+.content_area2 .img_area2 figure{
+    background: url(../img/con_img1.png) no-repeat left/cover;
+    width: 20em;
+    height: 25em;
+}
+
+
+
+.content_area2 .img_area3{
+    position: absolute;
+    right: 0; top: 50em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.content_area2 .img_area3 figure{
+    background: url(../img/popup_img2.png) no-repeat left/cover;
+    width: 25em;
+    height: 35em;
+}
+.content_area2 .img_area3 .text_area{
+    margin-top: 20em;
+    text-align: right;
+    width: 25em;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+.content_area2 .img_area3 .text_area strong{
+    font-size: 1.5rem;
+}
+.content_area2 .img_area3 .text_area p{
+    margin-top: 1em;
+    line-height: 1.6;
+}
+
+
+.content_area2 .img_area4{
+    position: absolute;
+    left: 0; top: 87em;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #aebac7;
+    transform: rotate(-5deg);
+}
+.content_area2 .img_area4 figure{
+    width: 40em;
+    height: 15em;
+    background: url(../img/con_img5.jpg) no-repeat center/cover;
+}
+
+/* product_area */
+.product_area ul{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0; top: 102em;
+    width: 55%;
+}
+.product_area ul li{
+    width: 30%;
+    margin: 0 1em 5em 0;
+}
+.product_area ul li .text_area{
+    text-align: right;
+    background-color: rgba(132,151,261,0.3);
+    padding: 1em 0.5em 1em 0;
+}
+.product_area ul li .text_area p{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+.product_area ul li figure{
+    width: 100%;
+    height: 15em;
+    border-bottom: 5px solid #aebac7;
+}
+.product_area ul li:nth-child(1) figure{
+    background: url(../img/pd_img4.jpg) no-repeat center/cover;
+}
+.product_area ul li:nth-child(2) figure{
+    background: url(../img/pd_img2.jpg) no-repeat center/cover;
+}
+.product_area ul li:nth-child(3) figure{
+    background: url(../img/pd_img3.jpg) no-repeat center/cover;
+}
+/* product_area */
+
+
+
+.bottom figure{
+    background: url(../img/bottom_img.png)no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    font-size: 1.25em;
+}
+footer{
+    background-color: #50505067;
+    border-top: 3px solid #00000034;
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+}
